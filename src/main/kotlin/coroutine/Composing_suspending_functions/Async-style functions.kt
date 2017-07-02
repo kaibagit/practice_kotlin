@@ -16,14 +16,14 @@ fun asyncSomethingUsefulTwo() = async(CommonPool)  {
     doSomethingUsefulTwo()
 }
 
-// note, that we don't have `runBlocking` to the right of `coroutine.Coroutine_basics.main` in this example
+// note, that we don't have `runBlocking` to the right of `coroutine.Coroutine_basics.coroutine.generator.main` in this example
 fun main(args: Array<String>) {
     val time = measureTimeMillis {
         // we can initiate async actions outside of a coroutine
         val one = asyncSomethingUsefulOne()
         val two = asyncSomethingUsefulTwo()
         // but waiting for a result must involve either suspending or blocking.
-        // here we use `runBlocking { ... }` to block the coroutine.Coroutine_basics.main thread while waiting for the result
+        // here we use `runBlocking { ... }` to block the coroutine.Coroutine_basics.coroutine.generator.main thread while waiting for the result
         runBlocking {
             println("The answer is ${one.await() + two.await()}")
         }

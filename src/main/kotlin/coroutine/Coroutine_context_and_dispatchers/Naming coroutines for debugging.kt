@@ -5,8 +5,8 @@ package coroutine.Coroutine_context_and_dispatchers
  */
 import kotlinx.coroutines.experimental.*
 
-fun main(args: Array<String>) = runBlocking(CoroutineName("coroutine.Coroutine_basics.main")) {
-    log("Started coroutine.Coroutine_basics.main coroutine")
+fun main(args: Array<String>) = runBlocking(CoroutineName("coroutine.Coroutine_basics.coroutine.generator.main")) {
+    log("Started coroutine.Coroutine_basics.coroutine.generator.main coroutine")
     // run two background value computations
     val v1 = async(CommonPool + CoroutineName("v1coroutine")) {
         log("Computing v1")

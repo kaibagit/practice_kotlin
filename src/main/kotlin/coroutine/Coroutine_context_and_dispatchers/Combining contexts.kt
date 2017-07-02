@@ -19,5 +19,5 @@ fun main(args: Array<String>) = runBlocking<Unit> {
     delay(500)
     request.cancel() // cancel processing of the request
     delay(1000) // delay a second to see what happens
-    log("coroutine.Coroutine_basics.main: Who has survived request cancellation?")
+    log("coroutine.Coroutine_basics.coroutine.generator.main: Who has survived request cancellation?")
 }

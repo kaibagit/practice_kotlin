@@ -1,3 +1,5 @@
+package coroutine
+
 ///**
 // * Created by luliru on 2017/7/1.
 // */
@@ -8,7 +10,7 @@
 //var dbIoPool = newFixedThreadPoolContext(10,"redisIoPool")
 //
 //
-//fun main(args: Array<String>) = runBlocking<Unit> {
+//fun coroutine.generator.main(args: Array<String>) = runBlocking<Unit> {
 //
 //    repeat(10) { i ->
 //        var name = "luliru_"+i

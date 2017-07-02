@@ -14,7 +14,7 @@ object Main {
 //            Thread.sleep(500L)
             println("World!"+Thread.currentThread()) // print after delay
         }
-        println("Hello,"+Thread.currentThread()) // coroutine.Cancellation_and_timeouts.coroutine.Cancellation_and_timeouts.coroutine.Cancellation_and_timeouts.coroutine.Coroutine_basics.main function continues while coroutine is delayed
-        Thread.sleep(2000L) // block coroutine.Cancellation_and_timeouts.coroutine.Cancellation_and_timeouts.coroutine.Cancellation_and_timeouts.coroutine.Coroutine_basics.main thread for 2 seconds to keep JVM alive
+        println("Hello,"+Thread.currentThread()) // coroutine.Cancellation_and_timeouts.coroutine.Cancellation_and_timeouts.coroutine.Cancellation_and_timeouts.coroutine.Coroutine_basics.coroutine.generator.main function continues while coroutine is delayed
+        Thread.sleep(2000L) // block coroutine.Cancellation_and_timeouts.coroutine.Cancellation_and_timeouts.coroutine.Cancellation_and_timeouts.coroutine.Coroutine_basics.coroutine.generator.main thread for 2 seconds to keep JVM alive
     }
 }

@@ -7,7 +7,7 @@ import kotlinx.coroutines.experimental.*
 
 fun main(args: Array<String>) = runBlocking<Unit> {
     val jobs = arrayListOf<Job>()
-    jobs += launch(Unconfined) { // not confined -- will work with coroutine.Coroutine_basics.main thread
+    jobs += launch(Unconfined) { // not confined -- will work with coroutine.Coroutine_basics.coroutine.generator.main thread
         println(" 'Unconfined': I'm working in thread ${Thread.currentThread().name}")
     }
     jobs += launch(context) { // context of the parent, runBlocking coroutine
